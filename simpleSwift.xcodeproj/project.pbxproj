@@ -13,6 +13,8 @@
 		4D0198AD26E204AE00FCF7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0198AB26E204AE00FCF7B9 /* Main.storyboard */; };
 		4D0198AF26E204AF00FCF7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0198AE26E204AF00FCF7B9 /* Assets.xcassets */; };
 		4D0198B226E204AF00FCF7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0198B026E204AF00FCF7B9 /* LaunchScreen.storyboard */; };
+		4D0198BA26E204CC00FCF7B9 /* SimpleSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0198B926E204CC00FCF7B9 /* SimpleSwiftView.swift */; };
+		4D0198BC26E204E200FCF7B9 /* SimpleSwiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0198BB26E204E200FCF7B9 /* SimpleSwiftViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4D0198AE26E204AF00FCF7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0198B126E204AF00FCF7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D0198B326E204AF00FCF7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0198B926E204CC00FCF7B9 /* SimpleSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSwiftView.swift; sourceTree = "<group>"; };
+		4D0198BB26E204E200FCF7B9 /* SimpleSwiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSwiftViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				4D0198A526E204AE00FCF7B9 /* AppDelegate.swift */,
 				4D0198A726E204AE00FCF7B9 /* SceneDelegate.swift */,
 				4D0198A926E204AE00FCF7B9 /* ViewController.swift */,
+				4D0198B926E204CC00FCF7B9 /* SimpleSwiftView.swift */,
+				4D0198BB26E204E200FCF7B9 /* SimpleSwiftViewModel.swift */,
 				4D0198AB26E204AE00FCF7B9 /* Main.storyboard */,
 				4D0198AE26E204AF00FCF7B9 /* Assets.xcassets */,
 				4D0198B026E204AF00FCF7B9 /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			files = (
 				4D0198AA26E204AE00FCF7B9 /* ViewController.swift in Sources */,
 				4D0198A626E204AE00FCF7B9 /* AppDelegate.swift in Sources */,
+				4D0198BA26E204CC00FCF7B9 /* SimpleSwiftView.swift in Sources */,
 				4D0198A826E204AE00FCF7B9 /* SceneDelegate.swift in Sources */,
+				4D0198BC26E204E200FCF7B9 /* SimpleSwiftViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
