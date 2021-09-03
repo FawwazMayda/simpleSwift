@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        contentView.frame = self.view.frame
-        self.view = contentView
         setup()
+    }
+    
+    override func loadView() {
+        view = contentView
     }
     
     func setup() {
@@ -26,7 +28,6 @@ class ViewController: UIViewController {
         contentView.tableView.dataSource = viewModel.tableDataSource
         contentView.collectionView.dataSource = viewModel.collectionDataSource
     }
-
 }
 
 extension ViewController: SimpleSwiftViewDelegate {

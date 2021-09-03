@@ -46,6 +46,7 @@ class SimpleSwiftView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
+    
         setupUI()
         setupConstraint()
     }
@@ -70,7 +71,7 @@ class SimpleSwiftView: UIView {
             tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: interSpace),
             tableView.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: interSpace),
             tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -interSpace),
-            tableView.heightAnchor.constraint(equalToConstant: collectionHeight)
+            tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -interSpace)
         
         ])
     }

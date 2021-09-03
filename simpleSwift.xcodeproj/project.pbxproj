@@ -15,7 +15,18 @@
 		4D0198B226E204AF00FCF7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0198B026E204AF00FCF7B9 /* LaunchScreen.storyboard */; };
 		4D0198BA26E204CC00FCF7B9 /* SimpleSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0198B926E204CC00FCF7B9 /* SimpleSwiftView.swift */; };
 		4D0198BC26E204E200FCF7B9 /* SimpleSwiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0198BB26E204E200FCF7B9 /* SimpleSwiftViewModel.swift */; };
+		4D0198C426E2515300FCF7B9 /* simpleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0198C326E2515300FCF7B9 /* simpleSwiftTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D0198C626E2515300FCF7B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D01989A26E204AE00FCF7B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D0198A126E204AE00FCF7B9;
+			remoteInfo = simpleSwift;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D0198A226E204AE00FCF7B9 /* simpleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,20 @@
 		4D0198B326E204AF00FCF7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0198B926E204CC00FCF7B9 /* SimpleSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSwiftView.swift; sourceTree = "<group>"; };
 		4D0198BB26E204E200FCF7B9 /* SimpleSwiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSwiftViewModel.swift; sourceTree = "<group>"; };
+		4D0198C126E2515300FCF7B9 /* simpleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0198C326E2515300FCF7B9 /* simpleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleSwiftTests.swift; sourceTree = "<group>"; };
+		4D0198C526E2515300FCF7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4D01989F26E204AE00FCF7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0198BE26E2515300FCF7B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				4D0198A426E204AE00FCF7B9 /* simpleSwift */,
+				4D0198C226E2515300FCF7B9 /* simpleSwiftTests */,
 				4D0198A326E204AE00FCF7B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				4D0198A226E204AE00FCF7B9 /* simpleSwift.app */,
+				4D0198C126E2515300FCF7B9 /* simpleSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +94,15 @@
 				4D0198B326E204AF00FCF7B9 /* Info.plist */,
 			);
 			path = simpleSwift;
+			sourceTree = "<group>";
+		};
+		4D0198C226E2515300FCF7B9 /* simpleSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D0198C326E2515300FCF7B9 /* simpleSwiftTests.swift */,
+				4D0198C526E2515300FCF7B9 /* Info.plist */,
+			);
+			path = simpleSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +125,24 @@
 			productReference = 4D0198A226E204AE00FCF7B9 /* simpleSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4D0198C026E2515300FCF7B9 /* simpleSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0198C826E2515300FCF7B9 /* Build configuration list for PBXNativeTarget "simpleSwiftTests" */;
+			buildPhases = (
+				4D0198BD26E2515300FCF7B9 /* Sources */,
+				4D0198BE26E2515300FCF7B9 /* Frameworks */,
+				4D0198BF26E2515300FCF7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D0198C726E2515300FCF7B9 /* PBXTargetDependency */,
+			);
+			name = simpleSwiftTests;
+			productName = simpleSwiftTests;
+			productReference = 4D0198C126E2515300FCF7B9 /* simpleSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +154,10 @@
 				TargetAttributes = {
 					4D0198A126E204AE00FCF7B9 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					4D0198C026E2515300FCF7B9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4D0198A126E204AE00FCF7B9;
 					};
 				};
 			};
@@ -121,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				4D0198A126E204AE00FCF7B9 /* simpleSwift */,
+				4D0198C026E2515300FCF7B9 /* simpleSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +188,13 @@
 				4D0198B226E204AF00FCF7B9 /* LaunchScreen.storyboard in Resources */,
 				4D0198AF26E204AF00FCF7B9 /* Assets.xcassets in Resources */,
 				4D0198AD26E204AE00FCF7B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0198BF26E2515300FCF7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +213,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D0198BD26E2515300FCF7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0198C426E2515300FCF7B9 /* simpleSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D0198C726E2515300FCF7B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D0198A126E204AE00FCF7B9 /* simpleSwift */;
+			targetProxy = 4D0198C626E2515300FCF7B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D0198AB26E204AE00FCF7B9 /* Main.storyboard */ = {
@@ -327,6 +405,46 @@
 			};
 			name = Release;
 		};
+		4D0198C926E2515300FCF7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z35HSPF5XB;
+				INFOPLIST_FILE = simpleSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ball.simpleSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpleSwift.app/simpleSwift";
+			};
+			name = Debug;
+		};
+		4D0198CA26E2515300FCF7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z35HSPF5XB;
+				INFOPLIST_FILE = simpleSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ball.simpleSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpleSwift.app/simpleSwift";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +462,15 @@
 			buildConfigurations = (
 				4D0198B726E204AF00FCF7B9 /* Debug */,
 				4D0198B826E204AF00FCF7B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0198C826E2515300FCF7B9 /* Build configuration list for PBXNativeTarget "simpleSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0198C926E2515300FCF7B9 /* Debug */,
+				4D0198CA26E2515300FCF7B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

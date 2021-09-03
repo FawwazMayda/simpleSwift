@@ -13,10 +13,10 @@ protocol SimpleViewViewModelDelegate {
 }
 
 class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
-    private var colorArray: [UIColor] = []
+    internal var colorArray: [UIColor] = []
     
     init(itemCount: Int) {
-        for _ in 0..<itemCount {
+        for _ in 0...itemCount {
             let hue = CGFloat( Double(arc4random() % 256) / 256.0 );  //  0.0 to 1.0
             let saturation = CGFloat( Double(arc4random() % 128) / 256.0 ) + 0.5;  //  0.5 to 1.0, away from white
             let brightness = CGFloat( Double(arc4random() % 128) / 256.0 ) + 0.5;  //  0.5 to 1.0, away from black
@@ -46,10 +46,10 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
 }
 
 class TableViewDataSource: NSObject, UITableViewDataSource {
-    private var letterArray: [String] = []
+    internal var letterArray: [String] = []
     
     init(itemCount: Int) {
-        for _ in 0..<itemCount {
+        for _ in 0...itemCount {
             letterArray.append("Country: #\(Int.random(in: 1...500))")
         }
     }
